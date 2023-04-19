@@ -8,24 +8,17 @@ import {
   Teko,
   Mr_Dafoe,
   Poppins,
-  Shadows_Into_Light,
   Caveat,
 } from "next/font/google";
 import Image from "next/image";
 import satoru from "../../public/satoru.jpeg";
-import laptop from "../../public/laptop.png";
 import { useState } from "react";
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: "400" });
 const teko = Teko({ subsets: ["latin"], weight: "400" });
-const arizonia = Mr_Dafoe({ subsets: ["latin"], weight: "400" });
+const MrDafoe = Mr_Dafoe({ subsets: ["latin"], weight: "400" });
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 const caveat = Caveat({ subsets: ["latin"], weight: "400" });
-
-const shadowsIntoLight = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -36,7 +29,7 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="py-10 mb-10 flex justify-between">
             <h1
-              className={`text-4xl ${arizonia.className} text-violet-600 dark:text-violet-400 cursor-pointer`}
+              className={`text-4xl ${MrDafoe.className} text-violet-600 dark:text-violet-400 cursor-pointer`}
             >
               <Link href={"/"}>Debxd</Link>
             </h1>
