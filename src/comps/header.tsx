@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <Head>
-        <title>{"Debxd's portfolio"}</title>
+        <title>{"<DebxD/>"}</title>
       </Head>
     </>
   );
