@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import satoru from "../../public/satoru.jpeg";
 import { useState } from "react";
+import ReactTypingEffect from "react-typing-effect";
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: "400" });
 const teko = Teko({ subsets: ["latin"], weight: "400" });
@@ -29,7 +30,7 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="py-10 mb-10 flex justify-between">
             <h1
-              className={`text-4xl ${MrDafoe.className} text-violet-600 dark:text-violet-400 cursor-pointer`}
+              className={`text-4xl ${MrDafoe.className} text-gray-500 dark:text-violet-400 cursor-pointer`}
             >
               <Link href={"/"}>Debxd</Link>
             </h1>
@@ -72,7 +73,7 @@ export default function Home() {
           </div>
           <div className="text-center px-10">
             <h2
-              className={`text-5xl py-2 text-teal-600 dark:text-teal-500 tracking-wide  ${teko.className} `}
+              className={`text-5xl py-2 text-teal-600 dark:text-teal-500 tracking-wide hover:text-teal-700 hover:dark:text-teal-400 cursor-pointer  ${teko.className} `}
             >
               Debiprasad Das
             </h2>
@@ -84,8 +85,21 @@ export default function Home() {
             <p
               className={`${caveat.className} py-5 leading-8 text-gray-800 dark:text-gray-300 text-2xl`}
             >
-              I like to work on React with typescript, also on Flask.
+              I like to work on Frontend React with typescript, and Backend on
+              Python or Javascript.
             </p>
+          </div>
+
+          <div className="text-center">
+            <p className="inline-flex text-lg font-mono mr-2  text-gray-800 dark:text-gray-300">
+              I mostly
+            </p>
+            <ReactTypingEffect
+              text={["work with typescript", "build Web Apps"]}
+              speed={200}
+              typingDelay={1000}
+              className="py-5 leading-8 text-gray-800 dark:text-gray-300 text-lg font-mono "
+            />
           </div>
           <div className="text-4xl flex justify-center text-gray-600 dark:text-gray-400 gap-16 py-3">
             <Link href={"https://github.com/debxd/"}>
