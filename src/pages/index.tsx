@@ -82,26 +82,21 @@ export default function Home() {
             >
               Developer, FOSS & Linux Enthuasiast
             </h3>
-            <p
-              className={`${caveat.className} py-5 leading-8 text-gray-800 dark:text-gray-300 text-2xl`}
-            >
-              I like to work on Frontend React with typescript, and Backend on
-              Python or Javascript.
-            </p>
-          </div>
 
-          <div className="text-center">
-            <p className="inline-flex text-lg font-mono mr-2  text-gray-800 dark:text-gray-300">
-              I mostly
-            </p>
             <ReactTypingEffect
-              text={["work with typescript", "build Web Apps"]}
-              speed={200}
+              staticText="I like to work on"
+              text={[
+                "Frontend with React  & Typescript.",
+                "Backend on Python or Javascript.",
+              ]}
+              speed={100}
+              eraseSpeed={100}
               typingDelay={1000}
-              className="py-5 leading-8 text-gray-800 dark:text-gray-300 text-lg font-mono "
+              cursor="_"
+              className={`${caveat.className} py-5 leading-8 text-gray-800 dark:text-gray-300 text-2xl`}
             />
           </div>
-          <div className="text-4xl flex justify-center text-gray-600 dark:text-gray-400 gap-16 py-3">
+          <div className="mt-5 text-4xl flex justify-center text-gray-600 dark:text-gray-400 gap-16 py-3">
             <Link href={"https://github.com/debxd/"}>
               <AiFillGithub />
             </Link>
