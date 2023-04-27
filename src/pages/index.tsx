@@ -26,13 +26,13 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Header />
-      <main className="px-10 bg-gray-100 dark:bg-gray-800">
+      <main className="px-10 bg-neutral-300 dark:bg-neutral-800">
         <section className="min-h-screen">
           <nav className="py-10 mb-10 flex justify-between">
             <h1
-              className={`text-4xl ${MrDafoe.className} text-gray-500 dark:text-violet-400 cursor-pointer`}
+              className={`text-4xl ${MrDafoe.className}  text-teal-500 cursor-pointer`}
             >
-              <Link href={"/"}>Debxd</Link>
+              <Link href={"/"}>debxd</Link>
             </h1>
             <ul className="flex items-center">
               <li>
@@ -54,7 +54,8 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href={"/"}
+                  href={"https://github.com/debxd"}
+                  target="_blank"
                   className={`${poppins.className} bg-gradient-to-r  from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-cyan-700 hover:to-teal-700 py-2 px-4 text-white rounded-md ml-8`}
                 >
                   Projects
@@ -71,14 +72,14 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="text-center px-10">
+          <div className="text-center">
             <h2
               className={`text-5xl py-2 text-teal-600 dark:text-teal-500 tracking-wide hover:text-teal-700 hover:dark:text-teal-400 cursor-pointer  ${teko.className} `}
             >
               Debiprasad Das
             </h2>
             <h3
-              className={`text-2xl py-2 text-gray-900 dark:text-gray-200 ${jetbrainsMono.className}`}
+              className={`text-xl py-2 text-gray-900 dark:text-gray-200 ${jetbrainsMono.className}`}
             >
               Developer, FOSS & Linux Enthuasiast
             </h3>
@@ -93,17 +94,23 @@ export default function Home() {
               eraseSpeed={100}
               typingDelay={1000}
               cursor="_"
-              className={`${caveat.className} py-5 leading-8 text-gray-800 dark:text-gray-300 text-2xl`}
+              className={`${caveat.className} my-5 leading-8 text-gray-800 dark:text-gray-300 text-2xl`}
             />
           </div>
           <div className="mt-5 text-4xl flex justify-center text-gray-600 dark:text-gray-400 gap-16 py-3">
-            <Link href={"https://github.com/debxd/"}>
+            <Link
+              href={"https://github.com/DebXD?tab=repositories"}
+              target="_blank"
+            >
               <AiFillGithub />
             </Link>
-            <Link href={"https://www.linkedin.com/in/debiprasad-das-xd/"}>
+            <Link
+              href={"https://www.linkedin.com/in/debiprasad-das-xd/"}
+              target="_blank"
+            >
               <AiFillLinkedin />
             </Link>
-            <Link href={"https://t.me/debnationxd/"}>
+            <Link href={"https://t.me/debnationxd/"} target="_blank">
               <FaTelegramPlane />
             </Link>
           </div>
