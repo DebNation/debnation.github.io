@@ -56,7 +56,7 @@ export default function Home() {
                 <Link
                   href={"https://github.com/debxd"}
                   target="_blank"
-                  className={`${poppins.className} bg-gradient-to-r  from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-cyan-700 hover:to-teal-700 py-2 px-4 text-white rounded-md ml-8`}
+                  className="font-poppins bg-gradient-to-r  from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-cyan-700 hover:to-teal-700 py-2 px-4 text-white rounded-md ml-8"
                 >
                   Projects
                 </Link>
@@ -81,7 +81,7 @@ export default function Home() {
             <h3
               className={`text-xl py-2 text-gray-900 dark:text-gray-200 ${jetbrainsMono.className}`}
             >
-              Developer, FOSS & Linux Enthuasiast
+              Full Stack Developer, FOSS & Linux Enthuasiast
             </h3>
 
             <ReactTypingEffect
