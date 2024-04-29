@@ -2,7 +2,7 @@ import Header from "@/comps/header";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import Link from "next/link";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { FaTelegramPlane } from "react-icons/fa";
+import { FaTelegramPlane, FaDiscord } from "react-icons/fa";
 import {
   JetBrains_Mono,
   Teko,
@@ -105,10 +105,10 @@ export default function Home() {
               <AiFillGithub />
             </Link>
             <Link
-              href={"https://www.linkedin.com/in/debiprasad-das-xd/"}
+              href={"https://discordapp.com/users/418596954227081216"}
               target="_blank"
             >
-              <AiFillLinkedin />
+              <FaDiscord />
             </Link>
             <Link href={"https://t.me/debnationxd/"} target="_blank">
               <FaTelegramPlane />
