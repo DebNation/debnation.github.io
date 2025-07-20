@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Debnation diary</title>
+    <subtitle>bloggging and portfolio site of debnation</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://debnation.xyz/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://debnation.xyz"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-06-19T07:07:07+01:00</updated>
+    <id>https://debnation.xyz/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Why Should you use void linux</title>
+        <published>2024-06-19T07:07:07+01:00</published>
+        <updated>2024-06-19T07:07:07+01:00</updated>
+        
+        <author>
+          <name>
+            
+              Debiprasad Das
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://debnation.xyz/why-use-void-linux/"/>
+        <id>https://debnation.xyz/why-use-void-linux/</id>
+        
+        <content type="html" xml:base="https://debnation.xyz/why-use-void-linux/">&lt;h2 id=&quot;what-is-void-linux&quot;&gt;What is Void Linux:&lt;&#x2F;h2&gt;
+&lt;p&gt;void is a systemd-free runit based init system distro, who tries to be a independent free of the systemd monopoly and give it&#x27;s users a clean system experience.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-you-should-use-void-in-my-opinion&quot;&gt;Why You should Use Void(in my opinion)&lt;&#x2F;h2&gt;
+&lt;h4 id=&quot;1-package-manager&quot;&gt;1. Package manager:&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Void has a one of the best package manager out there, it&#x27;s very fast although the mirrors are kind of slow.&lt;&#x2F;li&gt;
+&lt;li&gt;Void packages are very small, they don&#x27;t include debug packages when you install some core utils, so that does make it very lightweight.&lt;&#x2F;li&gt;
+&lt;li&gt;Void package availability is surprisingly much better than pacman, or I think so excluding aur, found some packages in void repo which aren&#x27;t available in pacman.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;2-runit&quot;&gt;2. Runit:&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Runit is very fast even faster than systemd, boot time is less than 5 sec, unlike openrc it starts services in parallal.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;3-stability&quot;&gt;3. Stability:&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Void is very stable, even though though they are rolling release linux distribution, it is rock solid, the packages are rarely breaks.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;4-documentation&quot;&gt;4: Documentation:&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Yes, I know their documentation sucks, but it is great when you don&#x27;t need alot of things to run a system, it covers almost all the basic things needed to setup or fix.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;5-very-small-footprint&quot;&gt;5: Very Small Footprint:&lt;&#x2F;h4&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Architechture&lt;&#x2F;th&gt;&lt;th&gt;CPU&lt;&#x2F;th&gt;&lt;th&gt;RAM&lt;&#x2F;th&gt;&lt;th&gt;Storage&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;x86_64-glibc&lt;&#x2F;td&gt;&lt;td&gt;x86_64&lt;&#x2F;td&gt;&lt;td&gt;96MB&lt;&#x2F;td&gt;&lt;td&gt;700MB&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;x86_64-musl&lt;&#x2F;td&gt;&lt;td&gt;x86_64&lt;&#x2F;td&gt;&lt;td&gt;96MB&lt;&#x2F;td&gt;&lt;td&gt;600MB&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;i686-glibc&lt;&#x2F;td&gt;&lt;td&gt;Pentium 4 (SSE2)&lt;&#x2F;td&gt;&lt;td&gt;96MB&lt;&#x2F;td&gt;&lt;td&gt;700MB&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;ul&gt;
+&lt;li&gt;The base memory foot print is very small even smaller than arch linux.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>
