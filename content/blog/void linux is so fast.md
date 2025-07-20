@@ -1,5 +1,5 @@
 +++
-title = 'Why Should you use void linux'
+title = 'Void linux is so fast'
 date = 2024-06-19T07:07:07+01:00
 description = "Void linux deserve more users"
 tags = 'markdown'
@@ -38,3 +38,9 @@ void is a systemd-free runit based init system distro, who tries to be a indepen
 | i686-glibc    | Pentium 4 (SSE2) | 96MB | 700MB   |
 
 - The base memory foot print is very small even smaller than arch linux.
+
+#### 6: DownSides:
+
+- It is not updated as fast as arch linux does although some packages are faster to provide update.
+- Void has problems with NVIDIA GPU by default it uses open-source Nouveau driver so the distro gets stuck while booting into it, atleast it got stuck for me many times, you may need to switch to proper drivers.
+- Void works best with Xorg, and wayland compositors like hyprland are not available in void through offical repository.

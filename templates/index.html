@@ -1,24 +1,26 @@
-{% import "macros.html" as macros %}
-<!doctype html>
-<html class="not-ready lg:text-base" lang="{{ lang }}">
-  {% include "partials/head.html" %}
-  <body class="text-black duration-200 ease-out dark:text-white">
-    {% include "partials/header.html" %}
+{% extends "base.html" %}
+{% block content %}
+<h1 class="title">Debnation diary</h1>
 
-    <main
-      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl break-words px-4 pb-16 pt-32 dark:prose-invert"
-    >
-      {% block main %}
+<!-- Get the blog section and display posts directly on home page -->
+{% set blog_section = get_section(path="blog/_index.md") %}
+{% if blog_section.pages %}
+<h2>Latest Posts</h2>
+<ul>
+  {% for page in blog_section.pages %}
+  <li>
+    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    {% if page.date %}
+    <span class="date"> - {{ page.date | date(format="%B %d, %Y") }}</span>
+    {% endif %}
+    {% if page.summary %}
+    <p class="summary">{{ page.summary }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No posts available yet.</p>
+{% endif %}
 
-      <!-- Profile -->
-      {% if paginator is undefined or paginator.current_index == 1 %}<!---->
-      {% include "partials/profile.html" %}<!---->
-      {% endif %}<!---->
-
-      {% include "partials/page_list.html" %}<!---->
-      {% endblock main %}
-    </main>
-
-    {% include "partials/footer.html" %}
-  </body>
-</html>
+{% endblock content %}
