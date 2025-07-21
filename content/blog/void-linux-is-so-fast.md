@@ -1,11 +1,11 @@
 +++
 title = 'Void linux is so fast'
-date = 2024-06-19T07:07:07+01:00
+date = 2024-06-19
 description = "Void linux deserve more users"
 tags = 'markdown'
 +++
 
-## What is Void Linux:
+### What is Void Linux:
 
 void is a systemd-free runit based init system distro, who tries to be a independent free of the systemd monopoly and give it's users a clean system experience.
 
