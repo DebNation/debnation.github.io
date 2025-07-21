@@ -2,7 +2,7 @@
 title = 'my-experience-with-nothing-phone'
 date = 2025-07-21
 description = "my experience with nothing phone"
-tags = 'markdown'
+tags = ["nothing-phone", "nothing-phone-display", "green-tint", "purple-tint", "nothing-phone-experience"]
 +++
 
 I have been using their 2a Plus model for 6 months, so it was my first phone with an AMOLED display I didn't knew what are the quirks of an OLED display,
@@ -11,7 +11,7 @@ I saw the camera (I mean display) got all grany green colors on it and it scared
 So that day when I was going to sleep and when I put the brightness to very low sometimes strange happend everthing became the same greenish tint and even some green distored pixel lines when I open statusbar panel when phone is locked.
 I have seen some threads on reddit and their offical forum that it is software issue but when I deep dived it is not this happens because of display is incapable of showing some dark shades color in this case it is #030303.
 I also having to attempt 3-4 times to open the phone using In-Display-Fingerprint Sensor, I think due to the faulty dislay fingerprint recognition also hampered.
-Nothing corp knew about the issue and did push a OS update where it changes the lock screen shade color to pitch black so that green tint won't be visible but does that fix the main problem! 
+Nothing corp knew about the issue and did push a OS update where it changes the lock screen shade color to pitch black so that green tint won't be visible but does that fix the main problem!
 no, it's not.
 As far as I know VisionX manufactured has this issue more prominent than BOE manufactured display, but both of them are bad in comparison to the phones display quality you get in this price range.
 So where ever this color is present the display shows green and purple tints, and even some HDR movies dark scenes got so bad(green/purple tint) I decided to contact their support.

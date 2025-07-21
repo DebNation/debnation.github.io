@@ -1,8 +1,8 @@
 +++
-title = 'Void linux is so fast'
+title = 'void linux is so fast'
 date = 2024-06-19
-description = "Void linux deserve more users"
-tags = 'markdown'
+description = "void linux deserve more users"
+tags = ["linux", "void-linux", "performance", "fast-linux"]
 +++
 
 ### What is Void Linux:
