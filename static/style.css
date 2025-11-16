@@ -1,36 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
 
-/* Gruvbox Color Palette */
+/* Four-Color Monochrome Palette */
 :root {
-  /* Dark theme colors */
-  --bg0: #282828; /* Main background */
-  --bg1: #3c3836; /* Slightly lighter background */
-  --bg2: #504945; /* Card/section backgrounds */
-  --bg3: #665c54; /* Borders, inactive elements */
-
-  --fg0: #fbf1c7; /* Primary text */
-  --fg1: #ebdbb2; /* Secondary text */
-  --fg2: #d5c4a1; /* Muted text */
-  --fg3: #bdae93; /* Dimmed text */
-
-  /* Accent colors */
-  --red: #cc241d; /* Errors, warnings */
-  --green: #98971a; /* Success, nature */
-  --yellow: #d79921; /* Highlights, sun */
-  --blue: #458588; /* Links, water */
-  --purple: #b16286; /* Special elements */
-  --aqua: #689d6a; /* Code, tech */
-  --orange: #d65d0e; /* Emphasis, fire */
-
-  /* Bright variants for hover/active states */
-  --bright-red: #fb4934;
-  --bright-green: #b8bb26;
-  --bright-yellow: #fabd2f;
-  --bright-blue: #83a598;
-  --bright-purple: #d3869b;
-  --bright-aqua: #8ec07c;
-  --bright-orange: #fe8019;
+  --bg: #000000;        /* Background */
+  --text: #dddddd;      /* Main text */
+  --bright: #ffffff;    /* Headings / emphasis */
+  --link: #949494;      /* Dimmer links */
 }
 
 /* Base styles */
@@ -39,42 +14,27 @@
 }
 
 body {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Fira Mono", monospace;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: var(--bg0);
+  background-color: var(--bg);
   min-height: 100vh;
-  color: var(--fg1);
+  color: var(--text);
 }
 
 /* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--fg0);
+h1, h2, h3, h4, h5, h6 {
+  color: var(--bright);
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
+/* Slight styling detail allowed */
 h1 {
-  color: var(--bright-yellow);
-  border-bottom: 2px solid var(--yellow);
+  border-bottom: 2px solid var(--bright);
   padding-bottom: 0.5rem;
-}
-
-h2 {
-  color: var(--bright-green);
-}
-h3 {
-  color: var(--bright-blue);
-}
-h4 {
-  color: var(--bright-purple);
 }
 
 p {
@@ -83,18 +43,18 @@ p {
 
 /* Links */
 a {
-  color: var(--blue);
+  color: var(--link);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--bright-blue);
+  color: var(--bright);
   text-decoration: underline;
 }
 
 a:visited {
-  color: var(--purple);
+  color: var(--link);
 }
 
 /* Layout */
@@ -106,37 +66,35 @@ a:visited {
 
 /* Header */
 header {
-  background-color: var(--bg1);
-  border-bottom: 3px solid var(--yellow);
+  background-color: var(--bg);
+  border-bottom: 2px solid var(--bright);
   padding: 1.5rem 0;
 }
 
 header h1 {
   margin: 0;
   border: none;
-  padding: 0;
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0;
   display: flex;
   gap: 2rem;
 }
 
 nav a {
-  color: var(--fg1);
+  color: var(--text);
   font-weight: bold;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 4px;
-  transition: all 0.2s ease;
 }
 
 nav a:hover {
-  background-color: var(--bg2);
-  color: var(--bright-yellow);
-  text-decoration: none;
+  background-color: var(--bright);
+  color: var(--bg);
 }
 
 /* Main content */
@@ -144,13 +102,12 @@ main {
   padding: 2rem 0;
 }
 
-/* Articles and posts */
+/* Articles */
 article {
-  background-color: var(--bg1);
-  border-left: 4px solid var(--aqua);
+  background-color: var(--bg);
+  border-left: 3px solid var(--bright);
   padding: 1.5rem;
   margin-bottom: 2rem;
-  border-radius: 0 8px 8px 0;
 }
 
 article h2 {
@@ -158,51 +115,44 @@ article h2 {
 }
 
 .post-meta {
-  color: var(--fg3);
+  color: var(--link);
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
 
-.post-meta time {
-  color: var(--yellow);
-}
-
 /* Code blocks */
 code {
-  font-family: "JetBrains Mono", "Fira Code", "Consolas", monospace;
-  background-color: var(--bg2);
-  color: var(--bright-aqua);
+  font-family: "JetBrains Mono", monospace;
+  background-color: var(--bg);
+  color: var(--bright);
   padding: 0.2rem 0.4rem;
+  border: 1px solid var(--bright);
   border-radius: 3px;
   font-size: 0.9em;
 }
 
 pre {
-  background-color: var(--bg2);
-  border-left: 4px solid var(--aqua);
+  background-color: var(--bg);
+  border-left: 3px solid var(--bright);
   padding: 1rem;
   overflow-x: auto;
-  border-radius: 0 4px 4px 0;
   margin: 1rem 0;
 }
 
 pre code {
-  background: none;
+  border: none;
   padding: 0;
+  background: none;
 }
 
-/* Blockquotes */
+/* Blockquote */
 blockquote {
-  border-left: 4px solid var(--orange);
+  border-left: 3px solid var(--bright);
   margin: 1rem 0;
   padding: 1rem 1.5rem;
-  background-color: var(--bg1);
+  color: var(--text);
   font-style: italic;
-  color: var(--fg2);
-}
-
-blockquote p:last-child {
-  margin-bottom: 0;
+  background-color: var(--bg);
 }
 
 /* Tables */
@@ -210,87 +160,9 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 1rem 0;
-  background-color: var(--bg1);
 }
 
-th,
-td {
+th, td {
   padding: 0.75rem;
   text-align: left;
-  border-bottom: 1px solid var(--bg3);
-}
-
-th {
-  background-color: var(--bg2);
-  color: var(--bright-yellow);
-  font-weight: bold;
-}
-
-tr:hover {
-  background-color: var(--bg2);
-}
-
-/* Footer */
-footer {
-  background-color: var(--bg1);
-  border-top: 3px solid var(--orange);
-  padding: 1.5rem 0;
-  margin-top: 3rem;
-  text-align: center;
-  color: var(--fg2);
-}
-
-/* Buttons */
-.button {
-  display: inline-block;
-  background-color: var(--green);
-  color: var(--bg0);
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.2s ease;
-}
-
-.button:hover {
-  background-color: var(--bright-green);
-  color: var(--bg0);
-  transform: translateY(-1px);
-}
-
-/* Tags */
-.tag {
-  display: inline-block;
-  background-color: var(--bg2);
-  color: var(--bright-purple);
-  padding: 0.25rem 0.5rem;
-  border-radius: 3px;
-  font-size: 0.8rem;
-  margin-right: 0.5rem;
-  text-decoration: none;
-}
-
-.tag:hover {
-  background-color: var(--purple);
-  color: var(--fg0);
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  article {
-    padding: 1rem;
-  }
-
-  pre {
-    padding: 0.75rem;
-  }
-}
+  border-bottom: 1px solid
