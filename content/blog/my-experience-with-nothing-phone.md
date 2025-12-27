@@ -1,5 +1,5 @@
 +++
-title = 'my-experience-with-nothing-phone'
+title = 'my experience with nothing phone'
 date = 2025-07-21
 description = "my experience with nothing phone"
 tags = ["nothing-phone", "nothing-phone-display", "green-tint", "purple-tint", "nothing-phone-experience"]

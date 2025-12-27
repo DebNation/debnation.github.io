@@ -10,16 +10,16 @@
   <!-- Dynamic Title (falls back to default if page has no title) -->
   <title>
     {% if page.title %}
-      {{ page.title }} • DebNation's Blog
+      {{ page.title }} • debiplobi's Blog
     {% else %}
-      DebNation's Blog
+      debiplobi's Blog
     {% endif %}
   </title>
 
   <!-- Basic SEO -->
   <meta name="description"
-        content="{% if page.description %}{{ page.description }}{% else %}DebNation's personal blog covering software development, Linux, Rust, JavaScript, React, DevOps, and tech experiments.{% endif %}">
-  <meta name="author" content="DebNation">
+        content="{% if page.description %}{{ page.description }}{% else %}debiplobi's personal blog covering software development, Linux, Rust, JavaScript, React, DevOps, and tech experiments.{% endif %}">
+  <meta name="author" content="debiplobi">
 
   <!-- Canonical -->
   <link rel="canonical"
@@ -30,7 +30,7 @@
 
   <!-- OpenGraph (Facebook/Discord/Reddit/Slack) -->
   <meta property="og:title"
-        content="{% if page.title %}{{ page.title }} • DebNation's Blog{% else %}DebNation's Blog{% endif %}">
+        content="{% if page.title %}{{ page.title }} • debiplobi's Blog{% else %}debiplobi's Blog{% endif %}">
   <meta property="og:description"
         content="{% if page.description %}{{ page.description }}{% else %}Articles on coding, Linux, Rust, JavaScript, DevOps, and personal projects.{% endif %}">
   <meta property="og:type" content="{% if page.path %}article{% else %}website{% endif %}">
@@ -41,7 +41,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title"
-        content="{% if page.title %}{{ page.title }} • DebNation's Blog{% else %}DebNation's Blog{% endif %}">
+        content="{% if page.title %}{{ page.title }} • debiplobi's Blog{% else %}debiplobi's Blog{% endif %}">
   <meta name="twitter:description"
         content="{% if page.description %}{{ page.description }}{% else %}Articles on coding, Linux, Rust, JavaScript, DevOps, and personal projects.{% endif %}">
   <meta name="twitter:image" content="{{ config.base_url }}/og-image.jpg">
@@ -51,13 +51,13 @@
   {
     "@context": "https://schema.org",
     "@type": "{% if page.path %}BlogPosting{% else %}Blog{% endif %}",
-    "headline": "{% if page.title %}{{ page.title }}{% else %}DebNation's Blog{% endif %}",
-    "author": { "@type": "Person", "name": "DebNation" },
+    "headline": "{% if page.title %}{{ page.title }}{% else %}debiplobi's Blog{% endif %}",
+    "author": { "@type": "Person", "name": "debiplobi" },
     "url": "{% if page.permalink %}{{ page.permalink | safe }}{% else %}{{ config.base_url }}{% endif %}",
     "image": "{{ config.base_url }}/og-image.jpg",
     "publisher": {
       "@type": "Organization",
-      "name": "DebNation",
+      "name": "debiplobi",
       "logo": {
         "@type": "ImageObject",
         "url": "{{ config.base_url }}/og-image.jpg"
